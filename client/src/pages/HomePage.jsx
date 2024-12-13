@@ -1,18 +1,12 @@
 import React from 'react'
-
+import Cards from '../Components/cards';
+import DescriptionPage from '../Components/DescriptionPage';
 const HomePage = () => {
     return (
-        <>
-      <h1>CreeAle</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Entrar
-        </button>
-        <p>
-          Pagina de diseños con viniles de Alejandra
-        </p>
-      </div>
-    </>
+        <div className='p-10'>
+            <Cards />
+            <DescriptionPage />
+        </div>
     );
 }
 

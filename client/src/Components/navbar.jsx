@@ -1,14 +1,32 @@
 import React from 'react'
 import Ai from "../assets/AI.png"
-const navbar = () => {
+import { useNavigate } from 'react-router-dom';
+const Navbar = () => {
+    const navigate = useNavigate()
     return (
-        <nav>
-            <img src={Ai}></img>
-            <h1>Home</h1>
+        <nav className="bg-red-200 my-3 flex justify-between  px-10 rounded-lg 
+        shadow-xl top-0 overflow-hidden sticky " >
+            <div>
+            <img className='size-24 cursor-pointer' src={Ai} onClick={()=>{
+                navigate("/")
+            }}/>
+            </div>
+            <ul className=" flex gap-x-2 p-4">
+                
+                <li>
+                    <a href='/contacto' className="text-2xl font-bold">Contacto</a>
+                </li>
+                <li>
+                    <a href='/diseños' className="text-2xl font-bold">Diseños</a>
+                </li>
 
-            <a href='/designs'>Login</a>
+                <li>
+                    <a href='/login' className="text-2xl font-bold">Login</a>
+                </li>
+
+            </ul>
         </nav>
     );
 }
 
-export default navbar;
+export default Navbar;
