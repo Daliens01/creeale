@@ -1,7 +1,10 @@
+import {useNavigate} from "react-router-dom"
 import Img1 from "../assets/cardImages/img1.jpg"
 import Img2 from "../assets/cardImages/IM2.jpg"
 import Img3 from "../assets/cardImages/IM3.jpg"
+
 const Cards = () => {
+  const navigate =useNavigate()
   return (
     <div className='justify-center'>
       <div className='grid grid-flow-col justify-items-center '>
@@ -11,7 +14,9 @@ const Cards = () => {
           </div>
           <div className='p-6'>
             <p>Descripción de diseño</p>
-            <button 
+            <button onClick={()=>{
+              alert("diseño 1")
+            }} 
                 className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
                >Ver más</button>
           </div>
@@ -22,7 +27,9 @@ const Cards = () => {
         </div>
           <div className='p-6'>
             <p>Descripción de diseño</p>
-            <button 
+            <button onClick={()=>{
+              alert("diseño 2")
+            }}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
                >Ver más</button>
           </div>
@@ -33,7 +40,9 @@ const Cards = () => {
         </div>
           <div className='p-6'>
             <p>Descripción de diseño</p>
-            <button 
+            <button onClick={()=>{
+              alert("diseño 3")
+            }}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
                >Ver más</button>
           </div>
