@@ -5,20 +5,23 @@ import Designs from './pages/Designs.jsx'
 import ContactUs from "./pages/ContactUs"
 import Navbar from './Components/navbar'
 import Footer from './pages/Footer'
+import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/diseños' element={<Designs />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/contacto' element={<ContactUs />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <NextUIProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/diseños' element={<Designs />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/contacto' element={<ContactUs />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </NextUIProvider>
   )
 }
 

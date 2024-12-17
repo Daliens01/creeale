@@ -1,37 +1,49 @@
 import React from 'react'
 import Ai from "../assets/AI.png"
 import { useNavigate } from 'react-router-dom';
+import { Navbar as Nextnav, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+
 const Navbar = () => {
     const navigate = useNavigate()
     return (
-        <nav className="bg-red-200 my-3 flex justify-between  px-10  
-        shadow-xl top-0 overflow-hidden sticky " >
-            <div>
-            <img className='size-24 cursor-pointer' src={Ai} onClick={()=>{
-                navigate("/")
-            }}/>
-            </div>
-            <ul className=" flex gap-x-2 p-4 ">
-                
-                <li className='mx-3'>
-                    <a href='/contacto' className="text-2xl font-bold">Contacto</a>
-                </li>
-                <li className='mx-3'>
-                    <a href='/diseños' className="text-2xl font-bold">Servicios</a>
-                </li>
-                <li className='mx-3'>
-                    <a href='/diseños' className="text-2xl font-bold">Preguntas frecuentes</a>
-                </li>
-                <li className='ml-10'>
-                <button onClick={()=>{
-                    navigate("/login")
-                }}
-                 className="bg-blue-300 px-3 py-2 rounded-md"
-                type="submit">Login</button>
-                </li>
 
-            </ul>
-        </nav>
+        <Nextnav isBordered className='bg-pink-100'>
+            <NavbarBrand>
+                <img className='size-16 cursor-pointer' src={Ai} onClick={() => {
+                    navigate("/")
+                }} />
+            </NavbarBrand>
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                <NavbarItem>
+                    <Link color="foreground" href="/contacto">
+                        Contacto
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive>
+                    <Link aria-current="page" href="/diseños" color="secondary">
+                        Servicios
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="/faq">
+                        Preguntas frecuentes
+                    </Link>
+                </NavbarItem>
+            </NavbarContent>
+            <NavbarContent justify="end">
+                <NavbarItem className="hidden lg:flex">
+                    <Link href="/login" color='secondary'>Login</Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Button color="secondary" onPress={() => {
+                        navigate("/signup")
+                    }} variant="flat">
+                        Sign Up
+                    </Button>
+                </NavbarItem>
+            </NavbarContent>
+        </Nextnav>
+
     );
 }
 
