@@ -1,5 +1,5 @@
 import React from 'react'
-import Ai from "../assets/AI.png"
+import Ai from "../assets/AI2.png"
 import { useNavigate } from 'react-router-dom';
 import { Navbar as Nextnav, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 

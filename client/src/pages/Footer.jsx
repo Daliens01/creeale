@@ -1,4 +1,4 @@
-import logo from "../assets/AI.png"
+import logo from "../assets/AI2.png"
 import WhatsappLogo from "../assets/ContactIcons/whatsapp.svg"
 import FacebookLogo from "../assets/ContactIcons/facebook.svg"
 const Footer = () => {
