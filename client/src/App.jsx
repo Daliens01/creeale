@@ -3,8 +3,9 @@ import HomePage from "./pages/HomePage"
 import Login from "./pages/Login.jsx"
 import Designs from './pages/Designs.jsx'
 import ContactUs from "./pages/ContactUs"
-import Faq from "./pages/Faq"
-import Navbar from './Components/navbar'
+import Faq from "./pages/Faq.jsx"
+import Navbar from './Components/Navbar.jsx'
+import Register from "./pages/register.jsx"
 import Footer from './pages/Footer'
 import { NextUIProvider } from "@nextui-org/react";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/contacto' element={<ContactUs />} />
           <Route path='/faq' element={<Faq />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
         <Footer />
       </BrowserRouter>

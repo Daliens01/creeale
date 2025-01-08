@@ -2,7 +2,7 @@ import descriptionImg from "../assets/plotter.jpeg"
 
 const DescriptionPage = () =>{
     return(
-        <div className=" flex flex-row">
+        <div className="  sm:grid-cols-2 md:flex flex-row">
             <p className="text-justify">CreeAle Diseños, es una compañia de diseños personalizados creados con viniles usando cortadores especializados.
                 Entre los diseños que se encuentran, se pueden crear vasos personalizados, globos personalizados,
                 tarjetas, manualidades como cajas, implmentación de diseños personalizados en textiles como ropa o bolsas.

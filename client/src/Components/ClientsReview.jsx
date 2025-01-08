@@ -2,7 +2,7 @@ import starsIcon from "../assets/stars.png"
 
 const ClientsReview = ()=>{
     return(
-        <div className="">
+        <div className="my-8">
            <div className="">
            <h1>Persona de facebook</h1> 
            <div className="flex flex-row">

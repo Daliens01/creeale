@@ -6,9 +6,9 @@ const Faq = ( )=>{
 
     return(
         <>
-        <div>
-          <h1>Preguntas frecuentes</h1>
-        </div>
+        <div  className="flex flex-col h-[calc(50vh-100px)] items-center justify-center">
+          <h1 className="m-10 border-4 border-red-700">Preguntas frecuentes</h1>
+        <div className="border-red-700 border-4">
         <Accordion variant="shadow">
       <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
         {defaultContent}
@@ -20,6 +20,8 @@ const Faq = ( )=>{
         {defaultContent}
       </AccordionItem>
     </Accordion>
+        </div>
+    </div>
         </>
     )
 }
