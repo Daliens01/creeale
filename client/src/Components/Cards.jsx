@@ -6,10 +6,11 @@ import {Card, CardFooter, Image, Button,CardHeader} from "@nextui-org/react";
 const Cards = () => {
   // const navigate =useNavigate()
   return (
-    <div className='justify-center my-10'>
-      <div className='grid min-[320px]:grid-cols-2 md:grid-cols-4  justify-items-center border-red-500 border-1'>
+    <div className='justify-items-center my-10'>
+      <div className='grid min-[320px]:grid-cols-2 md:grid-cols-4 max-w-[900px]  gap-4 
+       '>
         {/* card 1 */}
-        <Card isFooterBlurred isPressable  className=" h-[500px] mx-8 border-red-500 border-1">
+        <Card isFooterBlurred isPressable  >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">New</p>
           <h4 className="text-black font-medium text-2xl">Acme camera</h4>
@@ -31,7 +32,7 @@ const Cards = () => {
         </CardFooter>
       </Card>
         {/* card 2 */}
-        <Card isFooterBlurred isPressable  className=" h-[500px] border-red-500 border-1">
+        <Card isFooterBlurred isPressable >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">New</p>
           <h4 className="text-black font-medium text-2xl">Acme camera</h4>
@@ -53,7 +54,7 @@ const Cards = () => {
         </CardFooter>
       </Card>
       {/* card 3 */}
-      <Card isFooterBlurred isPressable  className=" h-[500px] border-red-500 border-1">
+      <Card isFooterBlurred isPressable  >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">New</p>
           <h4 className="text-black font-medium text-2xl">Acme camera</h4>
@@ -75,7 +76,7 @@ const Cards = () => {
         </CardFooter>
       </Card>
           {/* card 4 */}
-          <Card isFooterBlurred isPressable  className=" h-[500px] border-red-500 border-1">
+          <Card isFooterBlurred isPressable  >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">New</p>
           <h4 className="text-black font-medium text-2xl">Acme camera</h4>

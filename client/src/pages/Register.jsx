@@ -67,6 +67,7 @@ const Register = () =>{
       onSubmit={onSubmit}
     >
       <div className="flex flex-col gap-4 max-w-md">
+      <h1>Register</h1>
         <Input
           isRequired
           errorMessage={({validationDetails}) => {

@@ -6,18 +6,24 @@ const Faq = ( )=>{
 
     return(
         <>
-        <div  className="flex flex-col h-[calc(50vh-100px)] items-center justify-center">
-          <h1 className="m-10 border-4 border-red-700">Preguntas frecuentes</h1>
-        <div className="border-red-700 border-4">
+        <div  className=" mb-56 flex flex-col h-[calc(50vh-100px)] items-center justify-center min-[320px]:mb-80 md:mb-56">
+          <h1 className="m-10 ">Preguntas frecuentes</h1>
+        <div className="min-[320px]:w-[300px] md:w-[900px]">
         <Accordion variant="shadow">
-      <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-        {defaultContent}
+      <AccordionItem key="1" aria-label="Como realizas los diseños" title="Como realizas los diseños?">
+        <p>Para realizar los diseños se utilizan todo tipo de viniles, desde permanentes y removibles a sublimados textiles. 
+          Se cortan con un plotter de la Marca Cricut, por lo que los cortes son de alta calidad
+        </p>
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-        {defaultContent}
+      <AccordionItem key="2" aria-label="Accordion 2" title="Cual es el rango de envíos?">
+        <p>Actualmente los envíos se centran en la ciudad de coatzacoalcos, Veracruz. Se tiene en mente expandirse a envíos a toda 
+          la republica Mexicana
+        </p>
       </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-        {defaultContent}
+      <AccordionItem key="3" aria-label="Accordion 3" title="Cuales son los medios de pagos disponibles?">
+        <p>Los pagos son por transferencia o por pago en efectivo. Se tiene en mente gestionar pagos directamente en pagina 
+          con usuario y contraseña
+        </p>
       </AccordionItem>
     </Accordion>
         </div>
